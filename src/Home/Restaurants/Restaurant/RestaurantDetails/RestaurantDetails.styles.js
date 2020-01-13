@@ -13,7 +13,8 @@ export const restaurantDetailsStyles = ScaledSheet.create({
   peopleCount: {color: colors.GREEN, textAlign: 'center'},
   foodItemName: { color: colors.GREEN, fontSize: '16@ms' },
   foodDescription: { color: colors.GREEN, fontSize: '12@ms' },
-  foodPrice: { color: colors.GREEN, fontSize: '16@ms' },
+  foodPrice: { alignItems:"center", color: colors.GREEN, fontSize: '16@ms' },
+  totalPrice: { color: colors.GREEN, fontSize: '20@ms' },
   description: {
     marginRight: '20@ms',
     marginLeft: '20@ms',

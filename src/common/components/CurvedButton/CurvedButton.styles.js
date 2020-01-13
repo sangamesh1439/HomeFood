@@ -10,7 +10,7 @@ export const curvedButtonStyles = ScaledSheet.create({
   titleStyle: {
     flex: 1,
     color: colors.WHITE,
-    fontSize: '15@ms',
+    fontSize: '20@ms',
     textAlign: 'center',
   },
 });

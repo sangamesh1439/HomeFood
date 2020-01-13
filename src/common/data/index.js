@@ -789,8 +789,7 @@ export const restaurantsData = [
     reviews: 100,
     uri:
       'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in fermentum',
+    
     moreDescription: {
       title: 'Lorem ipsum',
       description:
@@ -827,135 +826,12 @@ export const restaurantsData = [
         name:"Jeera Rice",
         description:"",
         price:"20"
+      },
+      {
+        name:"Dal Tadka",
+        description:"",
+        price:"25"
       }
     ]
-  },
-  {
-    id: 1,
-    name: "Gusteau's",
-    type: 'French',
-    rating: 3,
-    reviews: 100,
-    uri:
-      'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in fermentum',
-    moreDescription: {
-      title: 'Lorem ipsum',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in fermentum',
-    },
-    shortDescription: 'consectetur adipiscing elit',
-    time: '18:00 - 22:00',
-    moreImages: [
-      {
-        uri:
-          'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-      },
-      {
-        uri:
-          'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-      },
-      {
-        uri:
-          'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-      },
-    ],
-  },
-  {
-    id: 1,
-    name: "Gusteau's",
-    type: 'French',
-    rating: 3,
-    reviews: 100,
-    uri:
-      'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in fermentum',
-    moreDescription: {
-      title: 'Lorem ipsum',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in fermentum',
-    },
-    shortDescription: 'consectetur adipiscing elit',
-    time: '18:00 - 22:00',
-    moreImages: [
-      {
-        uri:
-          'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-      },
-      {
-        uri:
-          'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-      },
-      {
-        uri:
-          'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-      },
-    ],
-  },
-  {
-    id: 1,
-    name: "Gusteau's",
-    type: 'French',
-    rating: 3,
-    reviews: 100,
-    uri:
-      'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in fermentum',
-    moreDescription: {
-      title: 'Lorem ipsum',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in fermentum',
-    },
-    shortDescription: 'consectetur adipiscing elit',
-    time: '18:00 - 22:00',
-    moreImages: [
-      {
-        uri:
-          'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-      },
-      {
-        uri:
-          'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-      },
-      {
-        uri:
-          'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-      },
-    ],
-  },
-  {
-    id: 1,
-    name: "Gusteau's",
-    type: 'French',
-    rating: 3,
-    reviews: 100,
-    uri:
-      'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in fermentum',
-    moreDescription: {
-      title: 'Lorem ipsum',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in fermentum',
-    },
-    shortDescription: 'consectetur adipiscing elit',
-    time: '18:00 - 22:00',
-    moreImages: [
-      {
-        uri:
-          'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-      },
-      {
-        uri:
-          'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-      },
-      {
-        uri:
-          'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
-      },
-    ],
-  },
+  }
 ];
