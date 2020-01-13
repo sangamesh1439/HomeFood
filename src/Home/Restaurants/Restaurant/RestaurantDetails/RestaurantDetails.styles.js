@@ -11,7 +11,9 @@ export const restaurantDetailsStyles = ScaledSheet.create({
     justifyContent: 'space-around',
   },
   peopleCount: {color: colors.GREEN, textAlign: 'center'},
-
+  foodItemName: { color: colors.GREEN, fontSize: '16@ms' },
+  foodDescription: { color: colors.GREEN, fontSize: '12@ms' },
+  foodPrice: { color: colors.GREEN, fontSize: '16@ms' },
   description: {
     marginRight: '20@ms',
     marginLeft: '20@ms',

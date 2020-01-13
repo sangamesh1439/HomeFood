@@ -10,11 +10,12 @@ import {makeReservationModalStyles} from './MakeReservationModal.styles';
 import {Divider} from '../../../../../common/components/Divider/Divider';
 
 const MakeReservationModalComponent = props => {
-  const [peopleCounter, setPeopleCounter] = useState(2);
+  const [counterValue, updateCounterValue] = useState(2);
 
   const [, setSelectedHour] = useState('');
 
-  const {name, shortDescription, uri} = props.restaurant;
+  const {name, shortDescription, uri, food=[] } = props.restaurant;
+  console.log('food',food);
   return (
     <Modal
       onBackdropPress={props.hideModal}
@@ -45,9 +46,10 @@ const MakeReservationModalComponent = props => {
             </View>
             <Divider />
             <View style={makeReservationModalStyles.counterContainer}>
+             
               <Counter
-                peopleCounter={peopleCounter}
-                setPeopleCounter={setPeopleCounter}
+                counterValue={counterValue}
+                updateCounterValue={updateCounterValue}
               />
               <TimeSelection setSelectedHour={setSelectedHour} />
             </View>

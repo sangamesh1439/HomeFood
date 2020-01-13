@@ -783,8 +783,8 @@ export const typesOfRecipesData = [
 export const restaurantsData = [
   {
     id: 1,
-    name: "Gusteau's",
-    type: 'French',
+    name: "Deshpande",
+    type: 'Anand Nagar',
     rating: 3,
     reviews: 100,
     uri:
@@ -801,17 +801,34 @@ export const restaurantsData = [
     moreImages: [
       {
         uri:
-          'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
+          'https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2017/07/07200424/HomeCookedby-Foodizen1.jpg',
       },
       {
         uri:
-          'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
+          'http://www.savlas.com/wp-content/uploads/2017/03/savlas-home-food-hyderabad-2.jpg',
       },
       {
         uri:
-          'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
+          'https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/k5b3l76ojqpuxksd0hdp',
       },
     ],
+    food :[
+      {
+        name:"Phulka",
+        description:"Fresh wheat phukla",
+        price:"10"
+      },
+      {
+        name:"Bhendi Subji",
+        description:"Masala Bhendi subji",
+        price:"15"
+      },
+      {
+        name:"Jeera Rice",
+        description:"",
+        price:"20"
+      }
+    ]
   },
   {
     id: 1,

@@ -42,14 +42,7 @@ const restaurantsNavigator = createStackNavigator(
 
 const HomeNavigator = createBottomTabNavigator(
   {
-    recipesNavigator: {
-      screen: recipesNavigator,
-      navigationOptions: {
-        tabBarIcon: ({tintColor}) => (
-          <Icon type="Feather" name="smartphone" style={{color: tintColor}} />
-        ),
-      },
-    },
+    
     restaurantsNavigator: {
       screen: restaurantsNavigator,
       navigationOptions: {
@@ -59,6 +52,14 @@ const HomeNavigator = createBottomTabNavigator(
             name={'restaurant-menu'}
             style={{color: tintColor}}
           />
+        ),
+      },
+    },
+    recipesNavigator: {
+      screen: recipesNavigator,
+      navigationOptions: {
+        tabBarIcon: ({tintColor}) => (
+          <Icon type="Feather" name="smartphone" style={{color: tintColor}} />
         ),
       },
     },

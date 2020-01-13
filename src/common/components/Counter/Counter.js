@@ -9,8 +9,8 @@ const CounterComponent = props => {
     <View style={counterStyles.container}>
       <Icon
         onPress={() => {
-          if (props.peopleCounter > 1) {
-            props.setPeopleCounter(props.peopleCounter - 1);
+          if (props.counterValue > 1) {
+            props.updateCounterValue(props.counterValue - 1);
           }
         }}
         type="AntDesign"
@@ -19,11 +19,11 @@ const CounterComponent = props => {
       />
       <Text style={counterStyles.numberOfPeople}>
         {' '}
-        {props.peopleCounter} peopple
+        {props.counterValue} qty
       </Text>
       <Icon
         onPress={() => {
-          props.setPeopleCounter(props.peopleCounter + 1);
+          props.updateCounterValue(props.counterValue + 1);
         }}
         type="AntDesign"
         name="plus"
