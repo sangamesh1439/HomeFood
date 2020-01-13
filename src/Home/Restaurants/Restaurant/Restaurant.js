@@ -16,7 +16,7 @@ const RestaurantComponent = props => {
       <View style={restaurantStyles.container}>
         <View style={restaurantStyles.subContainer}>
           <Text style={restaurantStyles.name}>{props.restaurant.name}</Text>
-          <Text style={restaurantStyles.type}>{props.restaurant.type}</Text>
+          <Text style={restaurantStyles.type}>{props.restaurant.address}</Text>
           <View style={restaurantStyles.startRatingContainer}>
             <View style={restaurantStyles.starRating}>
               <StarRating

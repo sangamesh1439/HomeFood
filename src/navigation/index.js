@@ -12,6 +12,7 @@ import {colors} from '../common/theme/colors';
 import {RecipeDetails} from '../Home/TypesOfRecipes/RecipeType/RecipeList/Recipe/RecipeDetails/RecipeDetails';
 import {RestaurantDetails} from '../Home/Restaurants/Restaurant/RestaurantDetails/RestaurantDetails';
 import {WebView} from 'react-native-webview';
+import { Orders } from '../Home/Orders/Orders';
 
 const defaultNavigationOptions = props => {
   return {
@@ -28,6 +29,13 @@ const recipesNavigator = createStackNavigator(
     RECIPE_LIST_SCREEN: RecipeList,
     RECIPE_SCREEN: Recipe,
     RECIPE_DETAILS_SCREEN: RecipeDetails,
+  },
+  {defaultNavigationOptions},
+);
+
+const ordersNavigator = createStackNavigator(
+  {
+    orders: Orders,
   },
   {defaultNavigationOptions},
 );
@@ -55,8 +63,8 @@ const HomeNavigator = createBottomTabNavigator(
         ),
       },
     },
-    recipesNavigator: {
-      screen: recipesNavigator,
+    ordersNavigator: {
+      screen: ordersNavigator,
       navigationOptions: {
         tabBarIcon: ({tintColor}) => (
           <Icon type="Feather" name="smartphone" style={{color: tintColor}} />

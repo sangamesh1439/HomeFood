@@ -780,11 +780,22 @@ export const typesOfRecipesData = [
   },
 ];
 
+export const ordersData = [
+  {
+    id:1,
+    name: "Deshpande",
+    price: "50",
+    status:"Delived",
+    uri:
+    'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
+
+  }
+]
 export const restaurantsData = [
   {
     id: 1,
     name: "Deshpande",
-    type: 'Anand Nagar',
+    address: 'Anand Nagar',
     rating: 3,
     reviews: 100,
     uri:
