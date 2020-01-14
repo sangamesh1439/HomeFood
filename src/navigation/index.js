@@ -13,6 +13,12 @@ import {RecipeDetails} from '../Home/TypesOfRecipes/RecipeType/RecipeList/Recipe
 import {RestaurantDetails} from '../Home/Restaurants/Restaurant/RestaurantDetails/RestaurantDetails';
 import {WebView} from 'react-native-webview';
 import { Orders } from '../Home/Orders/Orders';
+import { Login } from '../Login/Login';
+import { SignUp } from '../SignUp/SignUp';
+import createAnimatedSwitchNavigator from 'react-navigation-animated-switch';
+import { Transition } from 'react-native-reanimated';
+import { Profile } from '../Profile/Profile';
+import { UpdateTodaysMenu } from '../UpdateTodaysMenu/UpdateTodaysMenu';
 
 const defaultNavigationOptions = props => {
   return {
@@ -48,7 +54,22 @@ const restaurantsNavigator = createStackNavigator(
   {defaultNavigationOptions},
 );
 
-const HomeNavigator = createBottomTabNavigator(
+const loginNavigator = createStackNavigator({
+  Login: {
+      screen: Login,
+      navigationOptions: {
+          header: null
+      }
+  },
+  SignUp: {
+      screen: SignUp,
+      navigationOptions: {
+          header: null
+      }
+  }
+})
+
+const UserNavigator = createBottomTabNavigator(
   {
     
     restaurantsNavigator: {
@@ -72,20 +93,12 @@ const HomeNavigator = createBottomTabNavigator(
       },
     },
     profile: {
-      screen: () => {
-        return (
-          <WebView
-            source={{
-              uri: 'https://www.linkedin.com/in/sangamesh-somawar-39973a86/',
-            }}
-          />
-        );
-      },
+      screen:Profile,
       navigationOptions: {
         tabBarIcon: ({tintColor}) => (
           <Icon
             type={'MaterialCommunityIcons'}
-            name={'ninja'}
+            name={'face-profile'}
             style={{color: tintColor}}
           />
         ),
@@ -100,4 +113,68 @@ const HomeNavigator = createBottomTabNavigator(
   },
 );
 
-export const RootNavigator = createAppContainer(HomeNavigator);
+const HouseWifeNavigator = createBottomTabNavigator(
+  {
+    
+    UpdateTodaysMenu: {
+      screen: UpdateTodaysMenu,
+      navigationOptions: {
+        tabBarIcon: ({tintColor}) => (
+          <Icon
+            type={'MaterialCommunityIcons'}
+            name={'shape-rectangle-plus'}
+            style={{color: tintColor}}
+          />
+        ),
+      },
+    },
+    ordersNavigator: {
+      screen: ordersNavigator,
+      navigationOptions: {
+        tabBarIcon: ({tintColor}) => (
+          <Icon type="FontAwesome" name="reorder" style={{color: tintColor}} />
+        ),
+      },
+    },
+    profile: {
+      screen:Profile,
+      navigationOptions: {
+        tabBarIcon: ({tintColor}) => (
+          <Icon
+            type={'MaterialCommunityIcons'}
+            name={'face-profile'}
+            style={{color: tintColor}}
+          />
+        ),
+      },
+    },
+  },
+  {
+    tabBarOptions: {
+      showLabel: false,
+      activeTintColor: colors.GREEN,
+    },
+  },
+);
+
+const rootNavigator = createAnimatedSwitchNavigator(
+  {
+      LoginNavigator: loginNavigator,
+      UserNavigator: UserNavigator,
+      HouseWifeNavigator: HouseWifeNavigator
+  },
+  {
+      transition: (
+          <Transition.Together>
+              <Transition.Out
+                  type="fade"
+                  durationMs={400}
+                  interpolation="easeIn"
+              />
+              <Transition.In type="fade" durationMs={500} />
+          </Transition.Together>
+      ),
+  }
+);
+
+export const RootNavigator = createAppContainer(rootNavigator);

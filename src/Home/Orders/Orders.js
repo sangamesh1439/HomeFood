@@ -2,7 +2,7 @@ import React from 'react';
 import {View, FlatList} from 'react-native';
 import {Order} from './Order/Order';
 import {styles} from '../../common/theme/styles';
-import {ordersData} from '../../common/data';
+import {ordersDataForUser} from '../../common/data';
 import {ordersStyles} from './Orders.styles';
 import { Icon, Container, Header, Item, Input, Button, Text } from 'native-base';
 import { colors } from '../../common/theme/colors';
@@ -23,7 +23,7 @@ class OrdersComponent extends React.Component {
         </Header>
         <FlatList
           style={ordersStyles.flatList}
-          data={ordersData}
+          data={ordersDataForUser}
           renderItem={({item}) => (
             <Order {...this.props} order={item} />
           )}

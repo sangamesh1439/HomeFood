@@ -780,7 +780,19 @@ export const typesOfRecipesData = [
   },
 ];
 
-export const ordersData = [
+export const ordersDataForUser = [
+  {
+    id:1,
+    name: "Deshpande",
+    price: "50",
+    status:"Delived",
+    uri:
+    'https://vignette.wikia.nocookie.net/fictionalcompanies/images/2/26/Gusteaus.jpg/revision/latest?cb=20150414201647',
+
+  }
+]
+
+export const ordersDataForHouseWife = [
   {
     id:1,
     name: "Deshpande",
